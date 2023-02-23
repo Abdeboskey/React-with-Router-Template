@@ -1,9 +1,22 @@
 .App {
   text-align: center;
-  background-color: #171D64;
+  background-color: var(--background-color);
   min-height: 100vh;
-  color: #DDFC74;
+  color: var(--primary-font-color);
   font-size: calc(10px + 2vmin);
+}
+
+h1 {
+  font-weight: 300;
+  color: var(--secondary-font-color);
+  margin: 0;
+  transition: all 1.6s ease;
+}
+
+h1:hover {
+  text-shadow: 2px 2px 2px var(--turquoise-highlight);
+  font-size: 220%;
+  transition: all 0.6s ease;
 }
 
 .App-logo {
