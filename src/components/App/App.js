@@ -17,7 +17,7 @@ function App() {
           I'm a software engineer, musician, & inline skater from Denver, CO.
         </p>
       </header>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
