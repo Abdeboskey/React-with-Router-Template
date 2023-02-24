@@ -14,7 +14,7 @@ function App() {
           Aaron Burris-DeBoskey
         </h1>
         <p>
-          I'm a software engineer, musician, & inline skater from Denver, CO.
+          ~ a software engineer, musician, & inline skater from Denver, CO.
         </p>
       </header>
       {/* <Footer /> */}
