@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 10vh;
+}
+
+.nav a {
+  font-size: calc(5px + 2vmin);
+  color: var(--turquoise-highlight);
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.border {
+  align-self: flex-start;
+  height: 1px;
+  width: 40%;
+  margin-top: 2.5vh;
+  background: linear-gradient(to right, var(--turquoise-highlight), var(--background-color));
+}
