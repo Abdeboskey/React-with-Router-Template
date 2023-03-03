@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
-// import Nav from 'components/Nav/Nav';
 import styles from './Header.module.css';
+import navStyles from 'style/Nav.module.css';
 
 const Header = () => {
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
+      <nav className={navStyles.nav}>
         <Link to="/" >/home</Link>
         <Link to="/software">/software</Link>
         <Link to="/music">/music</Link>
