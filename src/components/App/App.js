@@ -1,23 +1,32 @@
 import { Routes, Route } from 'react-router-dom';
 import sunflower from 'assets/seed.png';
-import Header from 'components/Header/Header';
-// import Footer from 'components/Footer/Footer';
-import './App.css';
-
+import Layout from 'components/Layout/Layout';
+import SoftwareLayout from 'components/Layout/SoftwareLayout';
+import MusicLayout from 'components/Layout/MusicLayout';
+import SkatingLayout from 'components/Layout/SkatingLayout';
 import Home from 'pages/Home/Home';
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Header />
       <img src={sunflower} className="sunflower" alt="A light blue sunflower spinning slowly in the top-right corner" />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/software" element={<h1>Software</h1>} />
-        <Route path="/music" element={<h1>Music</h1>} />
-        <Route path="/skating" element={<h1>Skating</h1>} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="software" element={<SoftwareLayout />}>
+            <Route index element={<h1>Mission</h1>} />
+            <Route path="background" element={<h1>Background</h1>} />
+            <Route path="portfolio" element={<h1>Portfolio</h1>} />
+            <Route path="stack" element={<h1>Stack</h1>} />
+            <Route path="resume" element={<h1>Resume</h1>} />
+          </Route>
+          <Route path="music" element={<MusicLayout />}>
+          </Route>
+          <Route path="skating" element={<SkatingLayout />}>
+          </Route>
+        </Route>
       </Routes>
-      {/* <Footer /> */}
     </div>
   );
 }

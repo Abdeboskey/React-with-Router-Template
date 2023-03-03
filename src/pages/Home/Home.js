@@ -10,7 +10,7 @@ const Home = () => {
         Aaron Burris-DeBoskey
       </h1>
       <p>
-        ~ a software engineer, musician, & inline skater
+        {'=>'} a software engineer, musician, & inline skater
         <br />from Denver, CO.
       </p>
     </main>
