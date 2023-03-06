@@ -1,13 +1,13 @@
-import { Link, Outlet } from 'react-router-dom';
-import styles from 'style/Nav.module.css';
+import { NavLink, Outlet } from 'react-router-dom';
+import 'style/Nav.css';
 
 const MusicLayout = () => {
   return (
     <>
-      <nav className={styles.nav}>
-        <Link to="/music">/bio</Link>
-        <Link to="/music/gigs">/gigs</Link>
-        <Link to="/music/recordings">/recordings</Link>
+      <nav>
+        <NavLink end to="/music">/bio</NavLink>
+        <NavLink to="/music/gigs">/gigs</NavLink>
+        <NavLink to="/music/recordings">/recordings</NavLink>
       </nav>
       <Outlet />
     </>

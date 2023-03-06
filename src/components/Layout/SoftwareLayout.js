@@ -1,15 +1,15 @@
-import { Link, Outlet } from 'react-router-dom';
-import styles from 'style/Nav.module.css';
+import { NavLink, Outlet } from 'react-router-dom';
+import 'style/Nav.css';
 
 const SoftwareLayout = () => {
   return (
     <>
-      <nav className={styles.nav}>
-        <Link to="/software">/mission</Link>
-        <Link to="/software/background">/background</Link>
-        <Link to="/software/portfolio">/portfolio</Link>
-        <Link to="/software/stack">/stack</Link>
-        <Link to="/software/resume">/resume</Link>
+      <nav> 
+        <NavLink end to="/software">/mission</NavLink>
+        <NavLink to="/software/background">/background</NavLink>
+        <NavLink to="/software/portfolio">/portfolio</NavLink>
+        <NavLink to="/software/stack">/stack</NavLink>
+        <NavLink to="/software/resume">/resume</NavLink>
       </nav>
       <Outlet />
     </>

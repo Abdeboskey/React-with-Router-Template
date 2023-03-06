@@ -1,13 +1,13 @@
-import { Link, Outlet } from 'react-router-dom';
-import styles from 'style/Nav.module.css';
+import { NavLink, Outlet } from 'react-router-dom';
+import 'style/Nav.css';
 
 const SkatingLayout = () => {
   return (
     <>
-      <nav className={styles.nav}>
-        <Link to="/skating">/bio</Link>
-        <Link to="/skating/PRs">/PRs</Link>
-        <Link to="/skating/teaching">/teaching</Link>
+      <nav>
+        <NavLink end to="/skating">/origins</NavLink>
+        <NavLink to="/skating/skates">/skates</NavLink>
+        <NavLink to="/skating/teaching">/teaching</NavLink>
       </nav>
       <Outlet />
     </>
