@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import sunflower from 'assets/seed.png';
 import Layout from 'components/Layout/Layout';
 import SoftwareLayout from 'components/Layout/SoftwareLayout';
+import Software from 'pages/Software/Software';
 import MusicLayout from 'components/Layout/MusicLayout';
 import SkatingLayout from 'components/Layout/SkatingLayout';
 import Home from 'pages/Home/Home';
@@ -15,7 +16,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="software" element={<SoftwareLayout />}>
-            <Route index element={<h1>Mission</h1>} />
+            <Route index element={<Software />} />
             <Route path="background" element={<h1>Background</h1>} />
             <Route path="portfolio" element={<h1>Portfolio</h1>} />
             <Route path="stack" element={<h1>Stack</h1>} />
