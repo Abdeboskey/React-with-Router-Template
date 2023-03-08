@@ -7,27 +7,3 @@
   overflow: hidden;
   position: relative;
 }
-
-.sunflower {
-  position: absolute;
-  top: -20vmin;
-  right: -20vmin;
-  height: 50vmin;
-  pointer-events: none;
-  filter: drop-shadow(0px 0px 80px var(--turquoise-highlight));
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .sunflower {
-    animation: sunflower-spin infinite 60s linear;
-  }
-}
-
-@keyframes sunflower-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
